@@ -1,6 +1,6 @@
 import pandas as pd
 
-movies = pd.read_csv("data/movies.dat", sep="::", header=None, names=['movieId', 'name', 'genre'])
+movies = pd.read_csv("home/AshnaC/flask-recommender/data/movies.dat", sep="::", header=None, names=['movieId', 'name', 'genre'])
 ratings = pd.read_csv("data/ratings.dat", sep="::", header=None, names=['userId', 'movieId', 'rate', 'timestamp'])
 users = pd.read_csv("data/users.dat", sep="::", names=['userId', 'gender', 'age', 'occupation', 'zipcode'])
 
